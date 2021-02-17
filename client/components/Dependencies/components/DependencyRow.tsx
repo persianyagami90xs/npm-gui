@@ -1,9 +1,9 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import { Button } from '../../ui/Button/Button';
-import { Loader } from '../Loader/Loader';
-import { ConfirmButton } from '../../ui/ConfirmButton/ConfirmButton';
-import { Icon } from '../../ui/Icon/Icon';
+import { Button } from '../../../ui/Button/Button';
+import { Loader } from '../../Loader/Loader';
+import { ConfirmButton } from '../../../ui/ConfirmButton/ConfirmButton';
+import { Icon } from '../../../ui/Icon/Icon';
 
 interface Props {
   dependency: Dependency.Entire;

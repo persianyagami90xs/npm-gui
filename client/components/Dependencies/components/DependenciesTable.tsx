@@ -1,8 +1,8 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import { ThSortable, ThStyled } from '../ThSortable/ThSortable';
+import { ThSortable, ThStyled } from '../../ThSortable/ThSortable';
 import { DependencyRow } from './DependencyRow';
-import { Loader } from '../Loader/Loader';
+import { Loader } from '../../Loader/Loader';
 
 interface Props {
   sortKey: string;

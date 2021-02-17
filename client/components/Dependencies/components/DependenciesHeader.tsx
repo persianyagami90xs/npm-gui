@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import styled from 'styled-components';
-import { Button } from '../../ui/Button/Button';
+import { Button } from '../../../ui/Button/Button';
+import { Search } from './Search/Search';
 
 const RightSection = styled.div`
   float: right;
@@ -12,11 +13,10 @@ interface Props {
   onUpdateAllToWanted: () => void;
   onUpdateAllToLatest: () => void;
   onForceReInstall: () => void;
-  children: ReactNode;
 }
 
 export function DependenciesHeader({
-  onInstallAll, children,
+  onInstallAll,
   onUpdateAllToInstalled,
   onUpdateAllToWanted,
   onUpdateAllToLatest,
@@ -24,7 +24,7 @@ export function DependenciesHeader({
 }:Props):JSX.Element {
   return (
     <header>
-      {children}
+      <Search />
       <RightSection>
         <small>Install:</small>
         &nbsp;
